@@ -723,6 +723,7 @@ class TinyGsmSim800 : public TinyGsmModem<TinyGsmSim800>,
           DBG("### Daylight savings time state updated.");
         }
       }
+      delay(1);
     } while (millis() - startMillis < timeout_ms);
   finish:
     if (!index) {
